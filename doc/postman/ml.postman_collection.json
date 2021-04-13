@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "80a1e858-6bd1-4294-b8c5-c570c9e8ca62",
+		"name": "ml",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "topsecret",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"satellites\": [\r\n\t\t{\r\n\t\t\t\"name\": \"kenobi\",\r\n\t\t\t\"distance\": 100.0,\r\n\t\t\t\"message\": [\"este\",\"\",\"\",\"mensaje\",\"\"]\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"name\": \"skywalker\",\r\n\t\t\t\"distance\": 115.5,\r\n\t\t\t\"message\": [\"\",\"es\",\"\",\"\",\"secreto\"]\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"name\": \"sato\",\r\n\t\t\t\"distance\": 142.7,\r\n\t\t\t\"message\": [\"este\",\"\",\"un\",\"\",\"\"]\r\n\t\t}\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.191.28.229/topsecret",
+					"protocol": "http",
+					"host": [
+						"18",
+						"191",
+						"28",
+						"229"
+					],
+					"path": [
+						"topsecret"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topsecret_split_kenobi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"satellites\": [\r\n\t\t{\r\n\t\t\t\"name\": \"kenobi\",\r\n\t\t\t\"distance\": 100.0,\r\n\t\t\t\"message\": [\"este\",\"\",\"\",\"mensaje\",\"\"]\r\n\t\t}\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.191.28.229/topsecret_split/kenobi",
+					"protocol": "http",
+					"host": [
+						"18",
+						"191",
+						"28",
+						"229"
+					],
+					"path": [
+						"topsecret_split",
+						"kenobi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topsecret_split_skywalker",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"satellites\": [\r\n\t\t{\r\n\t\t\t\"name\": \"skywalker\",\r\n\t\t\t\"distance\": 115.5,\r\n\t\t\t\"message\": [\"\",\"es\",\"\",\"\",\"secreto\"]\r\n\t\t}\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.191.28.229/topsecret_split/skywalker",
+					"protocol": "http",
+					"host": [
+						"18",
+						"191",
+						"28",
+						"229"
+					],
+					"path": [
+						"topsecret_split",
+						"skywalker"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topsecret_split_sato",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"satellites\": [\r\n\t\t{\r\n\t\t\t\"name\": \"sato\",\r\n\t\t\t\"distance\": 142.7,\r\n\t\t\t\"message\": [\"este\",\"\",\"un\",\"\",\"\"]\r\n\t\t}\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.191.28.229/topsecret_split/sato",
+					"protocol": "http",
+					"host": [
+						"18",
+						"191",
+						"28",
+						"229"
+					],
+					"path": [
+						"topsecret_split",
+						"sato"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topsecret_split_GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.191.28.229/topsecret_split",
+					"protocol": "http",
+					"host": [
+						"18",
+						"191",
+						"28",
+						"229"
+					],
+					"path": [
+						"topsecret_split"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topsecret_badrequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"satellites\": [\r\n\t\t{\r\n\t\t\t\"name\": \"kenobi\",\r\n\t\t\t\"distance\": 100.0,\r\n\t\t\t\"message\": [\"este\",\"\",\"\",\"mensaje\",\"\"]\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"name\": \"skywalker\",\r\n\t\t\t\"distance\": 115.5,\r\n\t\t\t\"message\": [\"\",\"es\",\"\",\"\",\"secreto\",\"es\",\"\",\"\",\"secreto\"]\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"name\": \"sato\",\r\n\t\t\t\"distance\": 142.7,\r\n\t\t\t\"message\": [\"este\",\"\",\"un\",\"\",\"\"]\r\n\t\t}\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.191.28.229/topsecret",
+					"protocol": "http",
+					"host": [
+						"18",
+						"191",
+						"28",
+						"229"
+					],
+					"path": [
+						"topsecret"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
